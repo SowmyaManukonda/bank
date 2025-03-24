@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBank</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MyBank - Secure Banking</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Bank Application</h1>
+            <h1><i class="fas fa-university"></i> MyBank</h1>
             <button class="hamburger" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
             </button>
         </header>
 
         <nav class="sidebar" id="sidebar">
-            <button onclick="showLogin()"><i class="fa fa-sign-in-alt"></i> Login</button>
-            <button onclick="showForm()"><i class="fa fa-user-plus"></i> Register</button>
-            <button onclick="toggleTheme()"><i class="fa fa-adjust"></i> Toggle Theme</button>
-            <button onclick="clearLocalStorage()"><i class="fa fa-trash"></i> Clear Data</button>
+            <button onclick="showLogin()"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <button onclick="showForm()"><i class="fas fa-user-plus"></i> Register</button>
+            <button onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Theme</button>
+            <button onclick="showTransactions()"><i class="fas fa-history"></i> Transactions</button>
+            <button onclick="clearLocalStorage()"><i class="fas fa-trash"></i> Clear Data</button>
         </nav>
 
         <main id="root"></main>
 
         <footer>
             <p>&copy; 2025 MyBank. Secure and Trusted Banking.</p>
+            <p id="currentDateTime"></p>
         </footer>
     </div>
 
